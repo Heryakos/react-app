@@ -28,4 +28,6 @@ class HttpServices {
   }
 }
 
-export default new HttpServices();
+const create = (endpoint: string) => new HttpServices(endpoint);
+
+export default create;
